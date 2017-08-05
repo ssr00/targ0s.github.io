@@ -41,7 +41,6 @@
 		['-i ', 'google_img',	'https://www.google.it/search?hl=it&site=imghp&tbm=isch&source=hp&biw=1540&bih=762&q='],
 		['-r ', 'reddit', 'https://www.reddit.com/search?q='],
 		['-t ', 'twitter', 'https://twitter.com/search?q='],
-		['-w ', 'wikipedia', 'https://it.wikipedia.org/wiki/'],
 		['-y ', 'youtube', 'https://www.youtube.com/results?search_query='],
 	
 	]
@@ -50,11 +49,14 @@
 
 		['-dd ', 'ddunlimited', 'http://www.ddunlimited.net/search.php?keywords='],
 		['-im ', 'imgur', 'http://imgur.com/search?q=',],
+		['-jw ', 'jw', 'https://www.jw.org/pt/busca/?q=',],
 		['-ra ', 'rarbg', 'https://rarbg.to/torrents.php?search='],
 		['-sc ', 'sin&con', 'http://www.sinonimi-contrari.it/'],
 		['-su ', 'subspedia', 'http://www.subspedia.tv/listaSerie.php?cerca='],
 		['-tr ', 'google_translate', 'https://translate.google.com/?hl=it#auto/it/'],
 		['-ug ', 'ult_guitar', 'https://www.ultimate-guitar.com/search.php?search_type=title&order=&value='],
+		['-we ', 'wikipedia pt', 'https://en.wikipedia.org/wiki/'],
+		['-wp ', 'wikipedia pt', 'https://pt.wikipedia.org/wiki/'],
 		['-wr ', 'word_reference', 'http://www.wordreference.com/iten/'],
 		
 	]	
