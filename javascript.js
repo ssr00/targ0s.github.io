@@ -55,6 +55,7 @@
 		['-su ', 'subspedia', 'http://www.subspedia.tv/listaSerie.php?cerca='],
 		['-tr ', 'google_translate', 'https://translate.google.com/?hl=it#auto/it/'],
 		['-ug ', 'ult_guitar', 'https://www.ultimate-guitar.com/search.php?search_type=title&order=&value='],
+		['-wa ', 'wolframalpha', 'https://www.wolframalpha.com/input/?i='],
 		['-we ', 'wikipedia pt', 'https://en.wikipedia.org/wiki/'],
 		['-wp ', 'wikipedia pt', 'https://pt.wikipedia.org/wiki/'],
 		['-wr ', 'word_reference', 'http://www.wordreference.com/iten/'],
@@ -67,7 +68,6 @@
 		['-cds ', 'chit_spiaggia', 'http://www.chitarradaspiaggia.com/forum/search.php?keywords='],
 		
 	]
-	
 	
 	var google = 'http://www.google.com/search?q=';
 	var duckduckgo = 'https://duckduckgo.com/?q=';
