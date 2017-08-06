@@ -64,10 +64,10 @@
 
 	var s5 = [
 
+		['-gta ', 'translate', 'https://translate.google.com.br/#auto/pt/',],
 		['-gte ', 'translate', 'https://translate.google.com.br/#en/pt/',],
 		['-gtp ', 'translate', 'https://translate.google.com.br/#pt/en/',],
 		['-tpb ', 'thepiratebay', 'https://thepiratebay.org/search/'],
-		['-cds ', 'chit_spiaggia', 'http://www.chitarradaspiaggia.com/forum/search.php?keywords='],
 		
 	]
 	
