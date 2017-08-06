@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-	background-color: #373D45;
+	background-color: #282828;
 	color:#979c9b;
    }
    
@@ -26,7 +26,7 @@ main {
 
 #clock {
 	color: #ffffff;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 #datebox {
 	display: inline-block;
