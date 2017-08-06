@@ -64,6 +64,7 @@
 
 	var s5 = [
 
+		['-imd ', 'imdb_site', 'https://www.imdb.com/find?s=all&q=',],
 		['-gta ', 'translate', 'https://translate.google.com.br/#auto/pt/',],
 		['-gte ', 'translate', 'https://translate.google.com.br/#en/pt/',],
 		['-gtp ', 'translate', 'https://translate.google.com.br/#pt/en/',],
@@ -141,8 +142,8 @@
 							return false;
 							break;
 					}
-				}
-				
+				}	
+
 				window.open(defaultSearch + escape(input1.value));
 				clearInput();
 				return false;
