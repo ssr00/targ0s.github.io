@@ -22,23 +22,14 @@ main {
 	.header {
 		display: block;
 	}
-}	
-
-#clock {
-	color: #ffffff;
-	margin-bottom: 10px;
 }
-#datebox {
-	display: inline-block;
-	font-weight: bold;
-	}
 
 .header {
 	width: 60px;
 	text-align: right;
 	font-weight: bold;
 	margin: 0 10px;
-}	
+}
 
 li {
 	font-size: 17px;
@@ -80,18 +71,18 @@ a:hover {
 }
 
 .col {
-	width: 20%;
+	width: 30%;
 	display: inline-block;
 	vertical-align: top;
 }
 .cmdH {
 	display: block;
 	text-align: right;
-	color: white;
+	color: #ff66d9;
 }
 .actH {
 	display: block;
-	color: white;
+	color: #80ffbf;
 }
 .cmd {
 	display: block;
@@ -99,22 +90,4 @@ a:hover {
 }
 .act {
 	display: block;
-}
-
-
-/* COLORS */
-.purple {
-	color: #dd98f2;
-}
-.red {
-	color: #f68678;
-}
-.yellow {
-	color: #f7e595;
-}
-.green {
-	color: #92d690;
-}
-.blue {
-	color: #8293ef;
 }

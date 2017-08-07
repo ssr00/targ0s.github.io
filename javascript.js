@@ -1,43 +1,10 @@
-
-	
-	document.addEventListener('DOMContentLoaded', function(){
-		
-		GetClock();
-		setInterval(GetClock, 1000);
-
-	
-	}, false );
-	
-	
-	/* TIME */
-
-	var tmonth = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-	var tdate = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-
-	function GetClock() {
-		var d = new Date();
-		var nmonth = d.getMonth();
-		var nday = d.getDay();
-		var ndate = d.getDate();
-		var nyear = d.getYear();
-		if(nyear<1000) nyear+=1900;
-		var nhour = d.getHours();
-		var nmin = d.getMinutes();
-		if(nmin<=9) nmin = "0" + nmin
-
-		document.getElementById('clockbox').innerHTML = nhour + ":" + nmin ;
-		document.getElementById('datebox').innerHTML = tdate[nday] + "-" + ndate + "-" + tmonth[nmonth];
-	}
-	
-	
 	
 	/* QUICK SEARCH */
 
 	var s3 = [
-	
-		['-a ', 'amazon', 'https://www.amazon.it/s/ref=nb_sb_noss_2?__mk_it_IT=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords='],
+
+		['-b ', 'bing', 'https://www.bing.com/search?q='],
 		['-f ', 'facebook', 'https://www.facebook.com/search/top/?q='],
-		['-k ', 'kat.cr', 'https://katcr.co/new/torrents-search.php?search='],
 		['-i ', 'google_img',	'https://www.google.it/search?hl=it&site=imghp&tbm=isch&source=hp&biw=1540&bih=762&q='],
 		['-r ', 'reddit', 'https://www.reddit.com/search?q='],
 		['-t ', 'twitter', 'https://twitter.com/search?q='],
@@ -47,29 +14,31 @@
 
 	var s4 = [
 
-		['-dd ', 'ddunlimited', 'http://www.ddunlimited.net/search.php?keywords='],
 		['-im ', 'imgur', 'http://imgur.com/search?q=',],
 		['-jw ', 'jw', 'https://www.jw.org/pt/busca/?q=',],
-		['-ra ', 'rarbg', 'https://rarbg.to/torrents.php?search='],
-		['-sc ', 'sin&con', 'http://www.sinonimi-contrari.it/'],
-		['-su ', 'subspedia', 'http://www.subspedia.tv/listaSerie.php?cerca='],
-		['-tr ', 'google_translate', 'https://translate.google.com/?hl=it#auto/it/'],
-		['-ug ', 'ult_guitar', 'https://www.ultimate-guitar.com/search.php?search_type=title&order=&value='],
+		['-me ', 'mercado_livre', 'http://lista.mercadolivre.com.br/',],
+		['-sr ', 'subreddit', 'http://reddit.com/r/'],
+		['-un ', 'unsplash', 'https://unsplash.com/search/photos/'],
 		['-wa ', 'wolframalpha', 'https://www.wolframalpha.com/input/?i='],
-		['-we ', 'wikipedia pt', 'https://en.wikipedia.org/wiki/'],
-		['-wp ', 'wikipedia pt', 'https://pt.wikipedia.org/wiki/'],
-		['-wr ', 'word_reference', 'http://www.wordreference.com/iten/'],
+		['-we ', 'wikipedia_en', 'https://en.wikipedia.org/wiki/'],
+		['-wp ', 'wikipedia_pt', 'https://pt.wikipedia.org/wiki/'],
 		
 	]	
 
 	var s5 = [
 
-		['-imd ', 'imdb_site', 'https://www.imdb.com/find?s=all&q=',],
 		['-gta ', 'translate', 'https://translate.google.com.br/#auto/pt/',],
-		['-gte ', 'translate', 'https://translate.google.com.br/#en/pt/',],
-		['-gtp ', 'translate', 'https://translate.google.com.br/#pt/en/',],
+		['-gte ', 'en_to_pt', 'https://translate.google.com.br/#en/pt/',],
+		['-gtp ', 'pt_to_en', 'https://translate.google.com.br/#pt/en/',],
+		['-ltv ', 'legendas_tv', 'http://legendas.tv/busca/',],
 		['-tpb ', 'thepiratebay', 'https://thepiratebay.org/search/'],
 		
+	]
+
+	var s6 = [
+
+		['-eztv', 'eztv', 'https://eztv.ag/search/'],
+		['-imdb', 'imdb', 'https://www.imdb.com/find?s=all&q=',],
 	]
 	
 	var google = 'http://www.google.com/search?q=';
@@ -107,7 +76,7 @@
 			else {
 			
 				switch (value.substr(0,2)){
-					case '-?':
+					case '?':
 						clearInput();
 						help.style.display = 'block';
 
@@ -142,7 +111,16 @@
 							return false;
 							break;
 					}
-				}	
+				}
+				for (i=0; i<s6.length; i++){
+					switch (value.substr(0,5)){
+						case s6[i][0]:
+							window.open(s6[i][2] + escape(input1.value.slice(6)));
+							clearInput();
+							return false;
+							break;
+					}
+				}		
 
 				window.open(defaultSearch + escape(input1.value));
 				clearInput();
@@ -150,9 +128,7 @@
 			}
 		}
 	})
-	
-	
-	
+
 	/* HELP */
 	
 	displayHelp();
@@ -163,7 +139,7 @@
 		var cmd = document.querySelectorAll('.cmd');
 		var act = document.querySelectorAll('.act');
 		
-		var allSites = s3.concat(s4, s5);
+		var allSites = s3.concat(s4, s5, s6);
 		allSites.sort();
 
 
@@ -179,3 +155,5 @@
 			}
 		}
 	}
+
+
