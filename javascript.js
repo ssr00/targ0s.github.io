@@ -32,6 +32,7 @@
 		['-gte ', 'en_to_pt', 'https://translate.google.com.br/#en/pt/',],
 		['-gtp ', 'pt_to_en', 'https://translate.google.com.br/#pt/en/',],
 		['-ltv ', 'legendas_tv', 'http://legendas.tv/busca/',],
+		['-mal ', 'myanimelist', 'https://myanimelist.net/search/all?q='],
 		['-tpb ', 'thepiratebay', 'https://thepiratebay.org/search/'],
 		['-url ', 'site', 'https://'],
 		
