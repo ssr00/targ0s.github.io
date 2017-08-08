@@ -5,7 +5,7 @@
 
 		['-b ', 'bing', 'https://www.bing.com/search?q='],
 		['-f ', 'facebook', 'https://www.facebook.com/search/top/?q='],
-		['-i ', 'google_img',	'https://www.google.it/search?hl=it&site=imghp&tbm=isch&source=hp&biw=1540&bih=762&q='],
+		['-i ', 'google_img',	'https://www.google.com.br/search?hl=pt-BR&authuser=0&site=imghp&tbm=isch&source=hp&biw=1366&bih=576&q='],
 		['-r ', 'reddit', 'https://www.reddit.com/search?q='],
 		['-t ', 'twitter', 'https://twitter.com/search?q='],
 		['-y ', 'youtube', 'https://www.youtube.com/results?search_query='],
