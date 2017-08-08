@@ -14,6 +14,7 @@
 
 	var s4 = [
 
+		['-dw ', 'distro_watch', 'https://distrowatch.com/table.php?distribution=',],
 		['-im ', 'imgur', 'http://imgur.com/search?q=',],
 		['-jw ', 'jw', 'https://www.jw.org/pt/busca/?q=',],
 		['-me ', 'mercado_livre', 'http://lista.mercadolivre.com.br/',],
@@ -32,6 +33,7 @@
 		['-gtp ', 'pt_to_en', 'https://translate.google.com.br/#pt/en/',],
 		['-ltv ', 'legendas_tv', 'http://legendas.tv/busca/',],
 		['-tpb ', 'thepiratebay', 'https://thepiratebay.org/search/'],
+		['-url ', 'site', 'https://'],
 		
 	]
 
@@ -62,7 +64,6 @@
 		event.preventDefault();
 	}
 
-
 	if (event.keyCode == 13 || event.which == 13){
 			var value = input1.value;
 		
@@ -73,6 +74,7 @@
 				event.preventDefault();
 				return false;
 			}
+			
 			else {
 			
 				switch (value.substr(0,2)){
